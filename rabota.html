@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Долгиев Иса — строительные и монтажные работы в Ингушетии</title>
+  
+  <!-- SEO мета-теги -->
+  <meta name="description" content="Долгиев Иса - профессиональные строительные, монтажные, вентиляционные и жестяные работы в Ингушетии с опытом более 35 лет." />
+  <meta name="keywords" content="строительство, монтаж, вентиляция, жестяные работы, Ингушетия, Долгиев Иса" />
+  <meta name="author" content="Долгиев Иса" />
+  
+  <!-- Open Graph (для соцсетей) -->
+  <meta property="og:title" content="Долгиев Иса — строительные и монтажные работы" />
+  <meta property="og:description" content="Опыт работы более 35 лет. Качественные строительные и монтажные работы в Ингушетии." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:image" content="https://yourwebsite.com/preview.jpg" />
+  
+  <style>
+    /* Стили прежние (тот же стиль, что и раньше) */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f0ff 0%, #ffffff 100%);
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #004a99;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      animation: fadeInDown 1s ease forwards;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #c0d9ff;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 40px 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 74, 153, 0.2);
+      animation: fadeInUp 1s ease forwards;
+    }
+    main section {
+      margin-bottom: 40px;
+    }
+    main h2 {
+      color: #004a99;
+      font-size: 1.8rem;
+      margin-bottom: 18px;
+      border-bottom: 3px solid #004a99;
+      padding-bottom: 6px;
+      font-weight: 700;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.3s;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #333;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+    ul li {
+      background-color: #f0f8ff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #004a99;
+      box-shadow: 0 1px 5px rgba(0, 74, 153, 0.15);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    ul li:hover {
+      background-color: #c9e0ff;
+    }
+    .contact {
+      background-color: #e6f2ff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 74, 153, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.7s;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact a {
+      display: inline-block;
+      background-color: #0078d4;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 120, 212, 0.4);
+      transition: background-color 0.3s ease;
+      font-weight: 700;
+    }
+    .contact a:hover {
+      background-color: #005a9e;
+    }
+    footer {
+      background-color: #004a99;
+      color: #c0d9ff;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9rem;
+      margin-top: auto;
+      user-select: none;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f7fbff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 74, 153, 0.1);
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.9s;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #004a99;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      border: 2px solid #004a99;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #0078d4;
+      outline: none;
+      background-color: #e6f2ff;
+    }
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    form button {
+      background-color: #0078d4;
+      color: white;
+      font-size: 1.1rem;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0, 120, 212, 0.4);
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #005a9e;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 1.1s;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 74, 153, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    #map {
+      width: 100%;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 74, 153, 0.15);
+      margin-top: 30px;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 1.3s;
+    }
+    /* Отзывы */
+    .reviews {
+      background: #f0f8ff;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 0 15px rgba(0, 74, 153, 0.1);
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.9s;
+    }
+    .reviews h2 {
+      margin-bottom: 20px;
+      color: #004a99;
+    }
+    .review-item {
+      border-left: 4px solid #0078d4;
+      padding-left: 18px;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #333;
+    }
+    .review-item:last-child {
+      margin-bottom: 0;
+    }
+    .review-author {
+      margin-top: 8px;
+      font-weight: 700;
+      color: #004a99;
+      font-style: normal;
+    }
+    /* Анимации */
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    /* Адаптив */
+    @media (max-width: 600px) {
+      main {
+        padding: 25px 20px;
+        margin: 20px 15px;
+      }
+      header h1 {
+        font-size: 1.7rem;
+      }
+      main h2 {
+        font-size: 1.4rem;
+      }
+      .contact a {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Долгиев Иса</h1>
+    <p>Строительные, монтажные, вентиляционные и жестяные работы<br />Опыт работы более 35 лет в Ингушетии</p>
+  </header>
+  <main>
+    <section>
+      <h2>О моей работе</h2>
+      <p>Здравствуйте! Я — Долгиев Иса, профессионал с более чем 35-летним опытом в строительстве и монтаже. Работаю на территории Ингушетии и обеспечиваю качественное выполнение задач любой сложности.</p>
+      <p>Основные виды работ, которые я выполняю:</p>
+      <ul>
+        <li>Строительные работы</li>
+        <li>Монтажные работы</li>
+        <li>Установка и ремонт систем вентиляции</li>
+        <li>Жестяные работы (работа с металлом)</li>
+        <li>Капитальный ремонт и отделочные работы</li>
+        <li>Другие строительные услуги</li>
+      </ul>
+      <p>Моя задача — обеспечить надёжность и долговечность выполненных работ, а также индивидуальный подход к каждому клиенту.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Связаться со мной</h2>
+      <p>Есть вопросы или хотите обсудить ваш проект? Напишите или позвоните — всегда рад помочь!</p>
+      <a href="https://wa.me/79633985372" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">Написать в WhatsApp: +7 963 398 53 72</a>
+    </section>
+
+    <section>
+      <h2>Галерея работ</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/400x300?text=Работа+1" alt="Пример работы 1" />
+        <img src="https://via.placeholder.com/400x300?text=Работа+2" alt="Пример работы 2" />
+        <img src="https://via.placeholder.com/400x300?text=Работа+3" alt="Пример работы 3" />
+      </div>
+    </section>
+
+    <section id="map-section">
+      <h2>Моё расположение</h2>
+      <div id="map"></div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>Отзывы клиентов</h2>
+      <div class="review-item">
+        <p>"Очень доволен работой Исы! Все сделано качественно и быстро. Рекомендую всем!"</p>
+        <div class="review-author">— Ахмед Х.</div>
+      </div>
+      <div class="review-item">
+        <p>"Профессиональный подход и отличный результат. Работает честно и аккуратно."</p>
+        <div class="review-author">— Марина К.</div>
+      </div>
+      <div class="review-item">
+        <p>"Опытный мастер с большим стажем. Все работы по вентиляции и монтажу выполнены на высшем уровне."</p>
+        <div class="review-author">— Сергей П.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Обратная связь</h2>
+      <form id="contactForm" action="mailto:your-email@example.com" method="POST" enctype="text/plain" novalidate>
+        <label for="name">Имя*</label>
+        <input type="text" id="name" name="name" required placeholder="Ваше имя" />
+        
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+        
+        <label for="message">Сообщение*</label>
+        <textarea id="message" name="message" required placeholder="Ваше сообщение"></textarea>
+        
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    © 2025 Долгиев Иса — Все права защищены
+  </footer>
+
+  <!-- Яндекс.Карта -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(function () {
+      var map = new ymaps.Map('map', {
+        center: [43.1957, 44.8287], // Назрань, пример координат
+        zoom: 15,
+        controls: ['zoomControl', 'fullscreenControl']
+      });
+
+      var placemark = new ymaps.Placemark([43.1957, 44.8287], {
+        balloonContentHeader: 'Долгиев Иса',
+        balloonContentBody: 'Московская улица, дом 9, Назрань',
+        hintContent: 'Долгиев Иса'
+      }, {
+        preset: 'islands#blueHomeIcon'
+      });
+
+      map.geoObjects.add(placemark);
+    });
+  </script>
+
+  <!-- Проверка формы -->
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        alert('Пожалуйста, заполните все обязательные поля корректно.');
+      }
+    });
+  </script>
+
+  <!-- Яндекс.Метрика -->
+  <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(12345678, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true
+      });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/12345678" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</body>
+</html>
